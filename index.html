@@ -7,20 +7,28 @@
 </head>
 <body>
   
-     <h1>minha rotina</h1>
-    
-     <ol>
-          <li>acordar</li>
-          <li>ir para a escola</li>
-          <li>ir para o curso</li>
-     </ol>
-    
-     <h1>O que é necessário levar</h1>
+     <form action="#" method="post">
 
-     <ol>
-          <li>mochila</li>
-          <li>materiais</li>
-          <li>lanche</li>
-     </ol>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="seu nome.." required>
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="seuemail@email.com">
+          <br><br>
+          <label for="senha">senha:</label>
+          <input type="password" id="senha" required>
+          <br><br>
+          <label for="mensagem">mensagen:</label>
+          <textarea name="mensagen" id="mensagem" rows="6" cols="80" placeholder="escreva aqui.."></textarea>
+          <br><br>
+          <label for="cidade">cidade:</label>
+          <select name="cidade" id="cidade">
+               <option value="">Selecione..</option>
+               <option value="nh">Novo Hamburgo</option>
+               <option value="sl">São Leopoldo</option>
+               <option value="cb">Campo Bom</option>
+               <option value="mgo">Montenegro</option>
+          </select>
+     </form>
 </body>
 </html>
