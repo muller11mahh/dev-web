@@ -7,47 +7,69 @@
 </head>
 <body>
   
+<h3>Tabela</h3>
+
+    <table border="1">
+     <tr>
+          <th>Maria</th>
+          <th>Arthur</th>
+          <th>Vitória</th>
+          <th>Apollo</th>
+          <th>Miguel</th>
+          <th>Pietra</th>
+     </tr>
+     <tr>
+          <th>16 anos</th>
+          <th>15 anos</th>
+          <th>16 anos</th>
+          <th>14 anos</th>
+          <th>14 anos</th>
+          <th>17 anos</th>
+     </tr>
+     <tr>
+          <td>jogar vôlei</td>
+          <td>jogar vôlei</td>
+          <td>dançar</td>
+          <td>jogar futebol</td>
+          <td>Andar de cavalo</td>
+          <td>Desenhar</td>
+     </tr>
+    </table>
+    <br><br>
+    <br><br>
 <form action="#" method="post">
 
-    <label for="nome">Nome:</label>
-    <br><br>
-    <input type="text" id="nome" placeholder="Seu nome completo">
-    <br><br>
-    <label for="email">E-mail:</label>
-    <br><br>
-    <input type="email" id="email" placeholder="seuemail@email.com">
-    <br><br>
-    <label for="senha">Senha (min 6, só letras e números):</label>
-    <br><br>
-    <input type="password" id="senha" pattern="[a-zA-Z0-9]{6,}" placeholder="Mínimo 6 caracteres.." required>
-    <br><br>
-    <label for="idade">Idade (13 a 99):</label>
-    <br><br>
-    <input type="number" id="idade" min="13" max="99" required>
-    <br><br>
-     <label for="data">Data (só em 2026):</label>
-     <br><br>
-     <input type="date" id="data" min="2026-01-01" max="2026-12-31">
-     <br><br>
-     <label for="telefone">Telefone</label>
-     <br><br>
-     <input type="tel" id="telefone" pattern="/([0-9]-{2}\) [0-9]-{5}-[0-9]-{4}" placeholder="(51) 9999 9999">
-     <br><br>
-     <label for="nota">Nota (0 a 10):</label>
-     <br><br>
-     <input type="range" id="nota" min="0" max="10" value="7">
-     <br><br>
-     <label for="cor">Cor favorita</label>
-     <br><br>
-     <input type="color" id="cor" value="#3498db">
-     <br><br>
-     <label for="codigo">Código (gerado automaticamente):</label>
-     <br><br>
-     <input type="text" id="codigo" value="ALU-2026-001" disabled>
-     <br><br>
-     <button type="submit">Enviar</button>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="seu nome.." required>
+      <br><br>
+      <label for="idade">Idade (15 a 100):</label>
+      <input type="number" id="idade" min="15" max="100" required>
+      <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="seuemail@Email.com">
+      <br><br>
+      <label for="senha">Senha (min 6, Apenas letras e números):</label>
+      <input type="password" id="senha" pattern="[a-zA-Z0-9]{6,}" placeholder="Mínimo 6 caracteres.." required> 
+      <br><br>
+      <label for="cidade">Cidade:</label>
+      <select name="cidade" id="cidade">
+            <option value="">Selecione..</option>
+            <option value="nh">Novo Hamburgo</option>
+            <option value="poa">Porto Alegre</option>
+            <option value="sl">São Leopoldo</option>
+            <option value="sc">Santa Catarina</option>
+      </select>
+      <br><br>
+      <fieldset>
+          <legend>Gênero:</legend>
+          <input type="rádio" id="masc" name="genero" value="M">
+          <label for="masc">Masculino</label>
+          <input type="rádio" id="fem" name="genero" value="F">
+          <label for="fem">Feminino</label>
+      </fieldset>
+
 
 </form>
-    
+
 </body>
 </html>
