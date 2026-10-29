@@ -25,8 +25,28 @@
     <br><br>
     <input type="number" id="idade" min="13" max="99" required>
     <br><br>
+     <label for="data">Data (só em 2026):</label>
+     <br><br>
+     <input type="date" id="data" min="2026-01-01" max="2026-12-31">
+     <br><br>
+     <label for="telefone">Telefone</label>
+     <br><br>
+     <input type="tel" id="telefone" pattern="/([0-9]-{2}\) [0-9]-{5}-[0-9]-{4}" placeholder="(51) 9999 9999">
+     <br><br>
+     <label for="nota">Nota (0 a 10):</label>
+     <br><br>
+     <input type="range" id="nota" min="0" max="10" value="7">
+     <br><br>
+     <label for="cor">Cor favorita</label>
+     <br><br>
+     <input type="color" id="cor" value="#3498db">
+     <br><br>
+     <label for="codigo">Código (gerado automaticamente):</label>
+     <br><br>
+     <input type="text" id="codigo" value="ALU-2026-001" disabled>
+     <br><br>
+     <button type="submit">Enviar</button>
 
-    
 </form>
     
 </body>
