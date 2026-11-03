@@ -5,17 +5,8 @@ body{
    background-color: rgb(220, 228, 234);
 }
 
-h1{
-    border: 1px solid black;
+span{
+    display: block;
     background-color: lightblue;
-}
-
-p{
-    border: 1px solid black;
-    background-color: lightgreen;
-}
-
-div{
-    border: 1px solid blacks;
-    background-color: lightcoral;
+    margin-bottom: 10px;
 }
