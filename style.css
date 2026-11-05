@@ -5,6 +5,7 @@
     --cor-botão:#2563eb;
     --cor-hover:yellow;
     --cor-texto:white;
+    --cor-principal: #8b5cf6;
 
     --espacamento: 20px;
     --arredondamento: 12px;
@@ -19,6 +20,24 @@ body{
     background-color: var(--cor-fundo);
     margin: 0;
     padding: 30px;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--cor-card);
+}
+.topo h1{
+    color: var(--cor-principal);
+}
+nav{
+    display: flex;
+    gap: var(--espacamento);
+}
+nav a{
+    color: var(--cor-texto);
+    text-decoration: none;
 }
 header{
     text-align: center;
@@ -37,3 +56,16 @@ header{
     flex: 1;
     text-align: center;
  }
+button{
+    background-color: var(--cor-botão);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transição);
+}    
+button:hover{
+    background-color: var(--cor-hover);
+    transform: translatex(5px);
+} 
